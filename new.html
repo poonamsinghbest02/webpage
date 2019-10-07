@@ -2,13 +2,15 @@
 <html>
 <head>
 	<title>My first webpage</title>
+	
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Work+Sans&display=swap" rel="stylesheet">
 	<style>
 		*{
 			margin: 0;
 			padding: 0;
-			font-family: Century Gothic
+			font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Work Sans', sans-serif;
 		}
-
 		header{
 			background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
 			background-size: cover;
@@ -33,7 +35,7 @@
 		ul li a:hover{
 			color: black;
 			background-color: white;
-
+			border-radius: 10px;
 		}
 		.logo img{
 			float: left;
@@ -43,7 +45,7 @@
 		ul li.active a{
 			background-color: white;
 			color: black;
-
+			border-radius: 10px;
 		}
 		.title{
 			top: 50%;
@@ -54,7 +56,6 @@
 		.title h1{
 			color: white;
 			font-size: 80px;
-
 		}
 		.button{
 			top: 80%;
@@ -80,9 +81,6 @@
 			color: white;
 			text-decoration: none;
 			transition: 0.6s ease;
-
-
-
 		}
 		.btn:hover{
 			background-color: white;
@@ -98,20 +96,18 @@
 			font-family: Century Gothic;
 			font-size: 20px;
 		}
-
-
-		
-
+		.colorchange{
+			animation: colorchangeflying 2s infinite;
+		}
+		@keyframes colorchangeflying{
+			0%{color: grey;}
+			25%{color: white;}
+			50%{color: grey;}
+			75%{color: white;}
+			100%{color: grey;}
+		}
 		}
 		
-
-
-
-
-
-
-
-
 	</style>
 </head>
 <body>
@@ -137,7 +133,7 @@
 
 
 		<div class="title">
-			<h1>Main Creations</h1><br>
+			<h1><span class="colorchange">Main Creations</span></h1><br>
 			<p>es, USICT is a government college. GGSIPU is a state government University and since USICT is directly connected to GGSIPU's administration, all University Schools are considered to be state government college as well. ... USIT/ USICT is also government college and one can prefer it over others.</p>
 			<
 
@@ -155,4 +151,4 @@
 	</header>
 
 </body>
-</html>
+</html
