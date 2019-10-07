@@ -2,15 +2,18 @@
 <html>
 <head>
 	<title>My first webpage</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Work+Sans&display=swap" rel="stylesheet">
 	<style>
 		*{
 			margin: 0;
 			padding: 0;
-			font-family: Century Gothic
+			font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Work Sans', sans-serif;
 		}
-
 		header{
-			background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+			background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://img.collegepravesh.com/2017/02/USICT-Delhi.jpg);
 			background-size: cover;
 			height: 100vh;
 			background-position: center;
@@ -33,7 +36,7 @@
 		ul li a:hover{
 			color: black;
 			background-color: white;
-
+			border-radius: 10px;
 		}
 		.logo img{
 			float: left;
@@ -43,7 +46,7 @@
 		ul li.active a{
 			background-color: white;
 			color: black;
-
+			border-radius: 10px;
 		}
 		.title{
 			top: 50%;
@@ -53,15 +56,15 @@
 		}
 		.title h1{
 			color: white;
-			font-size: 80px;
-
+			font-size: 60px;
 		}
 		.button{
-			top: 80%;
+			top: 90%;
 			left: 50%;
 			position: absolute;
 			transform: translate(-60%,-50%);
 			transition: 0.6s ease;
+			border-radius: 10px;
 		}
 		.button:hover{
 			color: black;
@@ -73,6 +76,7 @@
 			color: white;
 			text-decoration: none;
 			transition: 0.6s ease;
+			border-radius: 10px;
 		}
 			.btn2{
 			border: 1px solid white;
@@ -80,9 +84,8 @@
 			color: white;
 			text-decoration: none;
 			transition: 0.6s ease;
-
-
-
+			margin-left: 10px;
+			border-radius: 10px;
 		}
 		.btn:hover{
 			background-color: white;
@@ -98,20 +101,18 @@
 			font-family: Century Gothic;
 			font-size: 20px;
 		}
-
-
-		
-
+		.colorchange{
+			animation: colorchangeflying 2s infinite;
+		}
+		@keyframes colorchangeflying{
+			0%{color: grey;}
+			25%{color: white;}
+			50%{color: grey;}
+			75%{color: white;}
+			100%{color: grey;}
+		}
 		}
 		
-
-
-
-
-
-
-
-
 	</style>
 </head>
 <body>
@@ -119,13 +120,13 @@
 		<div>
 
 		<div class="logo">
-			<img src="logo.png">
+			<img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/GGSIU_logo.svg/1200px-GGSIU_logo.svg.png">
 			
 
 
 		</div>
 		<div class="main">
-		<ul class="lists">
+		<ul class="lists animated bounce">
 			<li class="active"><a href="#">Home</a></li>
 			<li><a href="#">admissions</a></li>
 			<li><a href="#">contact</a></li>
@@ -137,9 +138,9 @@
 
 
 		<div class="title">
-			<h1>Main Creations</h1><br>
-			<p>es, USICT is a government college. GGSIPU is a state government University and since USICT is directly connected to GGSIPU's administration, all University Schools are considered to be state government college as well. ... USIT/ USICT is also government college and one can prefer it over others.</p>
-			<
+			<h1><span class="colorchange">Guru Gobind Singh Indraprastha University</span></h1><br>
+			<p>University School of Information, Communication and Technology, located in New Delhi, is one of the premier colleges in the country. Established in 1998, the college is affiliated to Guru Gobind Singh Indraprastha University (GGSIPU). The college offers full-time undergraduate and postgraduate courses viz. B.Voc, B.Tech and M.Tech dual degree, M.Tech and MCA. Candidates are required to appear for IPUCET examination for admission to B.Voc, B.Tech + M.Tech dual degree as well as MCA, and GATE/CET for M.Tech.</p>
+			
 
 
 		</div>
@@ -155,4 +156,4 @@
 	</header>
 
 </body>
-</html>
+</html
